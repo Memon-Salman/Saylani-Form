@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Assignment</title>
+</head>
+
+<body>
+  <!-- Heading and Image Logo -->
+  <header>
+    <img src="./images/logo.png" alt="">
+    <h1>STUDENT REGISTRATION FORM</h1>
+  </header>
+  <div class="wraper">
+    <form action="">
+      <!-- Form Data -->
+      <div class="row">
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName" maxlength="30" placeholder="Enter First Name" required> (max
+        30 characters )
+      </div>
+      <div class="row">
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Enter Last Name" required> (max 30 characters )
+      </div>
+      <div class="row">
+        <label for="dob">Date of Birth</label>
+        <select name="day" id="dob">
+          <option value="Day" selected>Day</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <select name="month" id="dob">
+          <option value="month" selected>Month</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <select name="year" id="dob">
+          <option value="year" selected>Year</option>
+          <option value="1999">1999</option>
+          <option value="2000">2000</option>
+          <option value="2001">2001</option>
+        </select>
+      </div>
+      <div class="row">
+        <label for="email">Email ID</label>
+        <input type="email" name="email" id="email" placeholder="Enter Email ID" required>
+      </div>
+      <div class="row">
+        <label for="mobNumber">Mobile Number</label>
+        <input type="number" name="mobNumber" id="mobNumber" maxlength="11" placeholder="Enter Mobile Number" required>
+        (11 digit number)
+      </div>
+      <div class="row">
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="gender" value="male"> Male
+        <input type="radio" name="gender" id="gender" value="female"> Female
+      </div>
+      <div class="row">
+        <label for="add" class="position-top">Address</label>
+        <textarea name="address" id="add" cols="40" rows="10" placeholder="Write your Address here..."></textarea>
+      </div>
+      <div class="row">
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" placeholder="Enter City Name" required> (max 30 characters )
+      </div>
+      <div class="row">
+        <label for="pin">Pin Code</label>
+        <input type="password" name="pinCode" id="pin" maxlength="6" placeholder="Enter Pin Code" required> (6 digit
+        number )
+      </div>
+      <div class="row">
+        <label for="state">State</label>
+        <input type="text" name="state" id="state" maxlength="30" placeholder="Enter State" required> (max 30 characters
+        )
+      </div>
+      <div class="row">
+        <label for="country">Country</label>
+        <input type="text" name="country" id="country" maxlength="30" placeholder="Enter Country">
+      </div>
+      <div class="row">
+        <label for="hobbies">Hobbies</label>
+        <input type="checkbox" name="hobbies" id="hobbies" value="Drawing"> Drawing
+        <input type="checkbox" name="hobbies" id="hobbies" value="Singing"> Singing
+        <input type="checkbox" name="hobbies" id="hobbies" value="Dancing"> Dancing
+        <input type="checkbox" name="hobbies" id="hobbies" value="Other"> Other
+        <input type="text" name="otherHobbie" id="hobbies" placeholder="Typye Here...">
+      </div>
+      <!-- Qualification Table -->
+      <div class="row">
+        <label for="qualification" class="position-top">Qualification</label>
+        <table>
+          <tr>
+            <th>SI.No</th>
+            <th>Examination</th>
+            <th>Board</th>
+            <th>Percentage</th>
+            <th>Year of Passing</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Class X</td>
+            <td><input type="text" id="qualification"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Class XII</td>
+            <td><input type="text" id="qualification"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Graduation</td>
+            <td><input type="text" id="qualification"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Master</td>
+            <td><input type="text" id="qualification"></td>
+            <td><input type="number"></td>
+            <td><input type="number"></td>
+          </tr>
+        </table>
+      </div>
+      
+      <div class="row">
+        <label for="course">Courses Applied For</label>
+        <input type="radio" name="course" id="course" value="bcs"> BCS
+        <input type="radio" name="course" id="course" value="bcom"> B.Com
+        <input type="radio" name="course" id="course" value="bsc"> B.Sc
+        <input type="radio" name="course" id="course" value="ba"> B.A
+      </div>
+      <br>
+      <div class="row" id="btn">
+        <input type="submit" value="Submit" formaction="submited.html">
+        <input type="reset" value="Reset">
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
